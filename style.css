@@ -97,11 +97,18 @@ nav ul li {
    flex-basis : 60%;
    display : flex;
    align-items : center;
+   margin-left: 15%;
 }
 .col-2 .arvindelay{
-   width : 90%;
-
+   width : 35%;
+   margin : 20px 0 12px 10px;
+   margin-left: 20px;
 }
+.col-2 .arvindelay:hover{
+    width : 40%;
+    margin-top: 15px;
+    margin-left: 11px;
+ }
 button {
      width : 140px;
      border : 0;
