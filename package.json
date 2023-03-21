@@ -1,0 +1,27 @@
+{
+  "name": "arvin-plugin.github.io",
+  "version": "1.0.0",
+  "description": "landing page products",
+  "main": "script.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvin-plugin/arvin-plugin.github.io.git"
+  },
+  "keywords": [
+    "arvin",
+    "web"
+  ],
+  "author": "arvin plugin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arvin-plugin/arvin-plugin.github.io/issues"
+  },
+  "homepage": "https://github.com/arvin-plugin/arvin-plugin.github.io#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
