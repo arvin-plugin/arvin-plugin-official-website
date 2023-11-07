@@ -228,7 +228,9 @@ app
     });
     
   });
-
+  app.get('/admin', (req, res) => {
+    res.render('admin'); // Render the admin.ejs view
+});
 app
   .listen(port, () => console.log(
     `App listening to port http://localhost:${port}, Running at: ${new Date().toISOString().replace('T', ' ').substring(0, 19)}`

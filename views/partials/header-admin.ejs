@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Tambahkan CSS untuk sidebar */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #f0f0f0;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #333;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+
+        .navbar {
+            margin-left: 0;
+            transition: 0.3s;
+        }
+
+        /* Tambahkan CSS untuk menggeser konten saat sidebar terbuka */
+        .content {
+            margin-left: 250px;
+            transition: 0.3s;
+        }
+
+        .active {
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar" id="mySidebar">
+    <a class="navbar-brand" href="/"><img src="../partials/images/arvin-studio.png" height="60px" width="70px" alt=""></a>
+    <a href="/create">New Post</a>
+    <a href="/update">Update Post</a>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+</nav>
+
+<div class="content" id="main">
+    <!-- Konten Anda akan ditampilkan di sini -->
+</div>
+
+<script>
+    // Fungsi untuk membuka dan menutup sidebar
+    function openNav() {
+        var sidebar = document.getElementById("mySidebar");
+        var navbar = document.getElementsByClassName("navbar")[0];
+        var content = document.getElementById("main");
+
+        if (sidebar.style.left === "0px") {
+            sidebar.style.left = "-250px";
+            navbar.style.marginLeft = "0";
+            content.style.marginLeft = "0";
+        } else {
+            sidebar.style.left = "0px";
+            navbar.style.marginLeft = "250px";
+            content.style.marginLeft = "250px";
+        }
+    }
+</script>
+</body>
+</html>
